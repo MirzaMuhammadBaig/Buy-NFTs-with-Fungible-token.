@@ -40,7 +40,7 @@ contract IECnft is ERC721, Ownable {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(msg.sender, tokenId);
-
+ 
         emit buyNft(msg.sender);
     }
 
